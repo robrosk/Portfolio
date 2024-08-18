@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rob Roskowski - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Social Media Links -->
+    <div class="social-links">
+        <a href="https://github.com/robrosk" target="_blank" title="GitHub">
+            <img src="https://img.icons8.com/ios-filled/50/ffffff/github.png" alt="GitHub">
+        </a>
+        <a href="https://www.linkedin.com/in/robroskowski/" target="_blank" title="LinkedIn">
+            <img src="https://img.icons8.com/ios-filled/50/ffffff/linkedin.png" alt="LinkedIn">
+        </a>
+    </div>
+
+    <header>
+        <h1>Rob Roskowski</h1>
+        <p>Computer Science Student at Michigan State University</p>
+    </header>
+
+    <main>
+        <section class="accordion">
+            <h2 onclick="toggleSection('education')">Education</h2>
+            <div id="education" class="content">
+                <p><strong>Bachelor of Science in Computer Science</strong></p>
+                <p>Concentration in Artificial Intelligence, Cognate in Physics</p>
+                <p><em>Michigan State University, May 2026</em></p>
+                <p><strong>Relevant Coursework:</strong></p>
+                <ul class="coursework">
+                    <li>Intro to Programming I with Python</li>
+                    <li>Intro to Programming II with C++</li>
+                    <li>Calculus III</li>
+                    <li>Physics I</li>
+                    <li>Discrete Mathematics</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="accordion">
+            <h2 onclick="toggleSection('courses')">Courses Completed</h2>
+            <div id="courses" class="content">
+                <ul class="courses-list">
+                    <li>
+                        <strong>Machine Learning Specialization</strong> - DeepLearning.AI, Stanford University
+                        <ul class="course-details">
+                            <li><em>Supervised Machine Learning: Regression and Classification</em></li>
+                            <li><em>Advanced Learning Algorithms</em></li>
+                            <li><em>Unsupervised Learning, Recommenders, Reinforcement Learning</em></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Deep Learning Specialization</strong> - DeepLearning.AI, Stanford University
+                        <ul class="course-details">
+                            <li><em>Neural Networks and Deep Learning</em></li>
+                            <li><em>Ongoing...</em></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="accordion">
+            <h2 onclick="toggleSection('work-experience')">Work Experience</h2>
+            <div id="work-experience" class="content">
+                <div class="experience">
+                    <h3>Software Engineer Intern at BorgWarner - May 2024 to August 2024</h3>
+                    <ul>
+                        <li>Solely architected and implemented a full-stack synthetic vehicle data generator, utilizing HTML, CSS, JavaScript, Flask, Python, and SQL, while optimizing performance through Cython compilation to C; integrated with CANalyzer and CANoe for comprehensive automotive system analysis.</li>
+                        <li>Engineered advanced data processing algorithms to enhance Google Maps API data, incorporating noise reduction, route segmentation, and curve smoothing techniques for improved simulation accuracy.</li>
+                        <li>Developed and trained a neural network for vehicle speed prediction and real-time calculation of critical metrics, integrating complex vehicle dynamics and customizable time intervals.</li>
+                        <li>Revolutionized BorgWarner’s development process by automating data generation and analysis, resulting in substantial time and cost savings through accelerated iteration cycles for ECU and steering system development.</li>
+                    </ul>
+                </div>
+                <div class="experience">
+                    <h3>Software Engineer Intern at MyEdMaster LLC - June 2023 to August 2023</h3>
+                    <ul>
+                        <li>Engineered and launched two dynamic algebra quiz platforms with HTML, CSS, and JavaScript, supporting research for an upcoming publication, earning authorship credit.</li>
+                        <li>Quizzes taken by thousands of students across the United States of America.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="accordion">
+            <h2 onclick="toggleSection('projects')">Projects</h2>
+            <div id="projects" class="content">
+                <ul>
+                    <li>
+                        <strong>AI-Powered Desktop and Video Game Assistant</strong>
+                        <ul>
+                            <li>Engineered a cross-platform AI assistance using Electron, Node.js, FastAPI, JavaScript, HTML, CSS, and Python, featuring real-time screen capture and analysis of the user’s active window.</li>
+                            <li>Integrated Gemini AI model with Retrieval-Augmented Generation (RAG), utilizing custom knowledge bases for video games and general computer assistance to provide personalized support.</li>
+                            <li>Implemented an advanced coding mode that grants the AI access to open files in the user’s IDE, enhancing its ability to provide context-aware programming assistance.</li>
+                            <li>Designed a seamless user experience that adapts to different operating systems, combining automated visual data processing with natural language interactions for comprehensive computer and gaming support.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Research Paper to Audiobook Converter using LLM's: Full Stack Application</strong>
+                        <ul>
+                            <li>Sole developer of a Python and Flask-based full-stack application that leverages OpenAI’s API to summarize research papers and convert them into audiobooks.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Maze Generator in C++</strong>
+                        <ul>
+                            <li>Engineered an innovative maze generator using C++ and object-oriented programming techniques, featuring two robust algorithms: Depth-First Search and Prim’s.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Pacman Recreation</strong>
+                        <ul>
+                            <li>Developed a Pacman recreation using HTML, CSS, and JavaScript, implementing advanced pathfinding algorithms and game mechanics to create a challenging and engaging user experience.</li>
+                            <li><a href="https://robrosk.github.io/PacMan/">Try it out yourself!</a></li>
+                            <li><a href="https://github.com/robrosk/PacMan">Associated GitHub Repo</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Rob Roskowski. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
